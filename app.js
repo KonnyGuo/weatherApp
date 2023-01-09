@@ -1,7 +1,7 @@
 require('dotenv').config();
 const express = require("express");
 const app = express();
-const https = require("node:https");
+const https = require("https");
 
 app.use(express.urlencoded({extended:true}));
 
@@ -78,11 +78,11 @@ app.post("/", function(req, res){
 // });
 
 
-app.listen(process.env.PORT, function(){
-    console.log("Server is running");
-});
-
-
-// app.listen(3000, function(){
+// app.listen(process.env.PORT, function(){
 //     console.log("Server is running");
 // });
+
+
+app.listen(3000, function(){
+    console.log("Server is running");
+});
