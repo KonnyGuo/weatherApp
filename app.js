@@ -78,11 +78,11 @@ app.post("/", function(req, res){
 // });
 
 
-// app.listen(process.env.PORT, function(){
-//     console.log("Server is running");
-// });
-
-
-app.listen(3000, function(){
+app.listen(process.env.PORT, function(){
     console.log("Server is running");
 });
+
+
+// app.listen(3000, function(){
+//     console.log("Server is running");
+// });
